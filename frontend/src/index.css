@@ -1,33 +1,35 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
-
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-a.activr hr{
+/* Fix: Typo in class selector 'activr' to 'active' */
+a.active hr {
   display: block;
 }
 
-*{
-  font-family:outfit;
+/* Apply default font */
+* {
+  font-family: 'Outfit', sans-serif;
 }
 
+/* Prata font utility class */
 .prata-regular {
   font-family: "Prata", serif;
   font-weight: 400;
   font-style: normal;
 }
 
-::-webkit-scrollbar{
+/* Hide scrollbar */
+::-webkit-scrollbar {
   display: none;
 }
 
-@media(max-width: 640px) {
-  a.active{
+/* Responsive styles for active links on small screens */
+@media (max-width: 640px) {
+  a.active {
     background-color: black;
     color: white;
   }
-  }
-
+}

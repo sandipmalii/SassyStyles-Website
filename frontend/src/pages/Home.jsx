@@ -4,20 +4,19 @@ import BestSeller from '../components/BestSeller'
 import LatestCollection from '../components/LatestCollection'
 import OurPolicy from '../components/OurPolicy'
 import NewsletterBox from '../components/NewsletterBox'
-import  Footer  from '../components/Footer'
+import Footer from '../components/Footer'
 
-const home = () => {
+const Home = () => {
   return (
     <div>
-      <Hero/>
-      <LatestCollection/>
-      <BestSeller/>
-      <OurPolicy/>
-      <NewsletterBox/>
-      <Footer/>
-
+      <Hero />
+      <LatestCollection />
+      <BestSeller />
+      <OurPolicy />
+      <NewsletterBox />
+      <Footer />
     </div>
   )
 }
 
-export default home
+export default Home;

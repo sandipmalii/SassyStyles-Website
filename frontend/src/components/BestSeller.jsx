@@ -1,8 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { ShopContext } from '../context/ShopContext';
 import Title from './Title';
-import ProductItem from './ProductItems'; // Ensure this import is correct
-
+import ProductItem from '../components/ProductItems'; 
 const BestSeller = () => {
   const { products } = useContext(ShopContext);
   const [bestSeller, setBestSeller] = useState([]);
@@ -22,9 +21,9 @@ const BestSeller = () => {
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6">
-        {bestSeller.map((item, index) => (
+        {bestSeller.map((item) => (
           <ProductItem
-            key={index}
+            key={item._id}  // better key than index if _id is unique
             id={item._id}
             name={item.name}
             image={item.image}
